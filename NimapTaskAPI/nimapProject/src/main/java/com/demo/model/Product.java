@@ -17,10 +17,12 @@ public class Product {
 
     private String name;
 
+ // Getters and setters for accessing and modifying properties //
+	
     @ManyToOne
     @JoinColumn(name = "category_id", nullable = false)
     @JsonManagedReference
-    private Category category;
+    private Category category;                            // Many products can belong to one category //
 
 	public Long getId() {
 		return id;
