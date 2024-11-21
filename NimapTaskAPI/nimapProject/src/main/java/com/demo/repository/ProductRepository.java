@@ -7,4 +7,4 @@ import com.demo.model.Product;
 public interface ProductRepository extends JpaRepository<Product, Long> {
 }
 
-
+// used for inherits basic CRUD methods from JpaRepository //
