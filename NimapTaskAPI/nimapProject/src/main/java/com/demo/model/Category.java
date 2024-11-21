@@ -19,10 +19,12 @@ public class Category {
     private Long id;
 
     private String name;
-
+	
+// Getters and setters for accessing and modifying properties //
+	
     @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonBackReference
-    private List<Product> products;
+    private List<Product> products;                 // One category can have multiple products //
 
 	public Long getId() {
 		return id;
