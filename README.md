@@ -11,6 +11,7 @@ This is a Spring Boot project demonstrating a RESTful API for managing categorie
 - Relational mapping between categories and products.
 - Integration with MySQL database.
 - API tested using Postman.
+- API tested over Browser.
 
 ## Prerequisites:
 - Before running the application, ensure you have:
@@ -22,9 +23,9 @@ This is a Spring Boot project demonstrating a RESTful API for managing categorie
 
 ## Database Configuration:
 #### This project uses MySQL as the database. Update your database credentials in application.properties:
-- spring.datasource.url=jdbc:mysql://<host>:<port>/<database_name>
-- spring.datasource.username=<username>
-- spring.datasource.password=<password>
+- spring.datasource.url=jdbc:mysql://localhost:3306/jap70
+- spring.datasource.username=root
+- spring.datasource.password=kapil
 - spring.jpa.hibernate.ddl-auto=update
 
 #### To connect to a remote MySQL database (example configuration):
